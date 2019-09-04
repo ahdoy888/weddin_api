@@ -40,7 +40,7 @@ app.use(cors(corsOptions));
 
 // GET Root Route
 app.get('/', (req, res) => {
-  res.send('<h1>Welcome to Auth API</h1>');
+  res.send('<h1>Welcome my Wedding App</h1>');
 });
 
 // Auth Routes
