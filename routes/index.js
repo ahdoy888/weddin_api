@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const DB_URL = process.env.MONGODB_URI || 'mongodb://localhost:27017/wayfarer-server'
+const DB_URL = process.env.MONGODB_URI || 'mongodb://localhost:27017/weddin_api'
 
 mongoose.connect(DB_URL, {
     useNewUrlParser: true,
@@ -10,11 +10,12 @@ mongoose.connect(DB_URL, {
     .catch((err) => console.log(`MongoDB connection error: ${err}`));
 
 module.exports = {
-    // User: require('./User'),
-    users: require('./users'),
-    Post: require('./Post'),
-    Comment: require('./Comment'),
     auth: require('./auth'),
+    users: require('./users'),
+    // users: require('./user'),
+    post: require('./post'),
+    // comment: require('./comment'),
+    
 
 };
 
