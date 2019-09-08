@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
   name: {
     type: String,
+    
   },
   username: {
     type: String,
@@ -18,11 +19,17 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true,
+    unique: true
   },
   signup_date: {
     type: Date,
     default: Date.now
   },
+
+  image: {
+    type: String,
+    default: 'https://www.cmcaindia.org/wp-content/uploads/2015/11/default-profile-picture-gmail-2.png' 
+}
  
 
 });
