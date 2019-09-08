@@ -7,9 +7,8 @@ const postSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'User'
   },
-  title: {
-    type: String,
-    require: true
+  img: {
+    type: String
   },
   content: {
     type: String,
