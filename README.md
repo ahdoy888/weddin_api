@@ -29,14 +29,21 @@ Link to Heroku
 
 ## User Stories
 1. Natigate to '/' and see the Home page only. 
--Link to (Modal)"Log In" and "Sign Up"
+-User can go to Register New User or "Log In" and "Sign Up"
 
 2. Sign up for an account.
+-Email, Name and Password.
+
 3. Login in to their account
-4. Redirect to the home page after log in 
-5. Profile can see their name and join date
-6. Header include "Log Out" if they log in
-7. Link to "Log in" and "Sign Up" if they're logged out
-8. See the post with comments
-9. Create a new post and edit or delete post
-10. Delete comment
+
+4. Profile can see their name and join date
+
+5. Header include "Log Out" if they log in
+
+6. Link to "Log in" and "Sign Up" if they're logged out
+
+7. See the post with comments
+
+8. Create a new post and edit or delete post
+
+9. View Post and Comment only if User log out 
