@@ -18,9 +18,9 @@ Link to Heroku
 
 ### Full CRUD 
 **User can register new account and Login.
--Create a Post with pictures and comment.
--User can create, edit and delete post. 
--User without the account can view post and comment only.  
+1. Create a Post with pictures and comment.
+2. User can create, edit and delete post. 
+3. User without the account can view post and comment only.  
 
 ## WireFrame 
 ![IMG_1923](https://user-images.githubusercontent.com/35648615/64209644-e91c5180-ce55-11e9-94f7-062fdaeb0533.jpg)
