@@ -6,8 +6,9 @@ Project-4 ( Final Project )
  
 1. Nodejs
 2. Express
-3. Moongoose 
-4. HTML/CSS.  
+3. Moongoose
+4. HTML/CSS
+5. MongoDB
 
 ### Libraries/Framworks used 
 1. Bootstrap
