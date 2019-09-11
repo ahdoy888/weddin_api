@@ -2,8 +2,6 @@
 
 Project-4 ( Final Project )
 
-Link to Heroku
-
 ### Technologies used 
  
 1. Nodejs
