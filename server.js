@@ -3,12 +3,11 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 5000;
 const routes = require('./routes');
 
 // -------------------------- MIDDLEWARE -------------------------- //
 
-app.use(cors());
 // BodyParser
 // Takes data out of the req object and convert it into an object and puts it in req.body
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,7 +29,12 @@ app.use(session({
   saveUninitialized: false // Only save the session if a property has been added to req.session
 }));
 
-
+const corsOptions = {
+  origin: ['http://localhost:4000', 'https://wedding-11-23.herokuapp.com'], // string or array
+  credentials: true, // This allows the session cookie to be sent back and forth
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions));
 
 // -------------------------- ROUTES -------------------------- //
 
