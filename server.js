@@ -8,6 +8,7 @@ const routes = require('./routes');
 
 // -------------------------- MIDDLEWARE -------------------------- //
 
+app.use(cors());
 // BodyParser
 // Takes data out of the req object and convert it into an object and puts it in req.body
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,7 +31,6 @@ app.use(session({
 }));
 
 
-app.use(cors());
 
 // -------------------------- ROUTES -------------------------- //
 
